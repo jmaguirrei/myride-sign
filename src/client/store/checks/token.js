@@ -1,0 +1,1 @@
+const LENGTH = 6;export const token = str => {  const result = str.length === LENGTH;  return {    result,    message: result ? null : {      en: `Token must have ${LENGTH} digits`,      es: `El token debe tener ${LENGTH} dígitos`,    },  };};
