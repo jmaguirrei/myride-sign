@@ -26,7 +26,7 @@ export default (client, id) => {
     render({ actions, classes, utils }) {
 
       return (
-        <div class={classes.forgot} onclick={actions.onclick}>
+        <div class={classes('forgot')} onclick={actions.onclick}>
           {
             utils.localize({
               en: 'Forgot password?',

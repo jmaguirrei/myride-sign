@@ -94,14 +94,14 @@ export default (client, id) => {
       return (
         <div
           onclick={actions.onclick}
-          class={classes.wrapper}
+          class={classes('wrapper')}
         >
-          <Icons {...{
-            icon: 'facebook',
-            size: 30,
-            inStyle: 'position: absolute; right: 12px; bottom: 9px;',
-          }}/>
-          <div class={classes.text}>{props.text}</div>
+          <Icons
+            icon='facebook'
+            size={30}
+            inStyle='position: absolute; right: 12px; bottom: 9px;'
+          />
+          <div class={classes('text')}>{props.text}</div>
         </div>
       );
     }

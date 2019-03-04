@@ -37,12 +37,12 @@ export default (client, id) => {
       const { inStyle = '' } = props;
 
       return (
-        <Icons {...{
-          icon: isPasswordVisible ? 'eyeOff' : 'eyeOn',
-          size: 22,
-          onclick: isIconVisible ? actions.onclick : () => undefined,
-          inStyle: styles.icon(isIconVisible, inStyle),
-        }}/>
+        <Icons
+          icon={isPasswordVisible ? 'eyeOff' : 'eyeOn'}
+          size={22}
+          onclick={isIconVisible ? actions.onclick : () => undefined}
+          inStyle={styles.icon(isIconVisible, inStyle)}
+        />
       );
     }
 
